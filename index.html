@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <title>Peng Jin</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,6 +16,16 @@
             width: 80%;
             margin: auto;
             padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .content, .photo-container {
+            flex: 1;
+        }
+        .my-photo {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
         }
         header {
             background: #333;
@@ -42,18 +52,23 @@
     </header>
 
     <div class="container">
-        <section id="about-me">
-            <h2>关于我</h2>
-            <p>您好！我是金鹏。</p>
-        </section>
+        <div class="content">
+            <section id="about-me">
+                <h2>关于我</h2>
+                <p>您好！我是金鹏。</p>
+            </section>
 
-        <section id="contact">
-            <h2>联系方式</h2>
-            <p>如果您对我的工作感兴趣或想要联系我，请通过以下方式：</p>
-            <ul>
-                <li>电子邮件：19110190022@fudan.edu.cn</li>
-            </ul>
-        </section>
+            <section id="contact">
+                <h2>联系方式</h2>
+                <p>如果您对我的工作感兴趣或想要联系我，请通过以下方式：</p>
+                <ul>
+                    <li>电子邮件：19110190022@fudan.edu.cn</li>
+                </ul>
+            </section>
+        </div>
+        <div class="photo-container">
+            <img src="me.jpg" alt="金鹏的自拍" class="my-photo">
+        </div>
     </div>
 
     <footer>
